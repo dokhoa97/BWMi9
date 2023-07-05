@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anh {
+            width: calc(25% - 16px);
+            margin: 5px;
+            border: 1px yellow solid;
+            float: left;
+        }
+        .anh>img {
+            width: 100%;
+        }
+        .anh:hover {
+            border: 1px red solid;
+        }
+        @media only screen and (max-width: 600px){
+            .anh {
+                width: calc(50% - 12px);
+            }
+        }
+        @media only screen and (max-width: 300px){
+            .anh {
+                width: calc(100% - 12px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="anh"><img src="1.jpg"></div>
+    <div class="anh"><img src="1.jpg"></div>
+    <div class="anh"><img src="1.jpg"></div>
+    <div class="anh"><img src="1.jpg"></div>
+</body>
+</html>
